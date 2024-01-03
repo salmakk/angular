@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg bg-primary ">
+  <div class="container-fluid">
+    <div class="logo-container">
+      <img src="https://th.bing.com/th/id/OIP.lmAPQZx4NX_6SHgWfmkSsgHaHa?rs=1&pid=ImgDetMain" class="navbar-logo">
+    </div>
+    <a class="navbar-brand text-white" href="#">WatchFilm</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 10px;">
+          <button class="btn btn-outline-light" [routerLink]="['/login']">Sign in</button>
+        </li>
+        <li class="nav-item" style="margin-right: 50px;">
+          <button class="btn btn-warning" [routerLink]="['/registration']">Sign up</button>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div class="container mt-3">
+<div class="container mt-3">
+  <form class="d-flex testo">
+    <div class="input-group">
+      <input #keyword class="form-control search-input" type="text" placeholder="Recherche un film" aria-label="Search">
+      <div class="input-group-append">
+        <button (click)="searchMovie(keyword.value)" class="btn btn-search btn-warning" type="submit">Rechercher</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container mt-3">
+  
+  <div class="movies">
+    <div *ngFor="let movie of films" class="col-4">
+      <div *ngIf="searchQuery === '' || movie.title.includes(searchQuery)">
+        <app-film-item [film]="movie"></app-film-item>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <h2 class="mb-3">Commentaires</h2>
+  <form>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control input-space" placeholder="Share your experience..." name="newCommentText" required>
+      <div class="input-group-append">
+        <button class="btn btn-warning btn-yellow" type="submit">Ajouter commentaire</button>
+      </div>
+    </div>
+  </form>
+</div>

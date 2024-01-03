@@ -1,0 +1,60 @@
+/* film-item.component.css */
+
+.movie {
+    position: relative;
+    border: 2px solid #ddd; /* Couleur de la bordure */
+    border-radius: 8px; /* Bordure arrondie */
+    overflow: hidden; /* Pour que la bordure n'entoure pas le bouton */
+}
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ddd; /* Bordure inférieure pour séparer le bouton de l'image */
+}
+  
+  .info {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .details-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .details-button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    transform: scale(1.05);
+  }
+
+  
+  

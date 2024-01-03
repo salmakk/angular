@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.movie1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #7fc7eb;
+    border-radius: 5px;
+}
+
+.movie1 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie1 .image img {
+    max-width: 50%; /* Adjust the percentage to control the image size */
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie1 .info {
+    text-align: center;
+    padding: 10px;
+}
+
+.movie1 .info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.movie1 .info p {
+    margin: 5px 0;
+}
+.blue-container {
+    background-color: #8cb7ed; /* Couleur bleue */
+    color: #120f0f; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Bordure arrondie */
+}

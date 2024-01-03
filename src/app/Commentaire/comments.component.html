@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <h2 class="mb-3">Commentaires</h2>
+  <form (ngSubmit)="addComment()" >
+    <div class="input-group mb-3">
+      <input type="text" class="form-control input-space" placeholder="écrire votre commentaire ici..."  [(ngModel)]="comment.content" name="newCommentText" required>
+      <div class="input-group-append">
+        <button class=" btn btn-warning btn-yellow" type="submit">Ajouter commentaire</button>
+      </div>
+    </div>
+  </form>
+  <div *ngFor ="let comment of comments" class="card mt-3">
+    <div class="card-header">
+      {{comment.user.emailId}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{comment.content}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+/* Ajoutez ces styles dans votre fichier CSS correspondant */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-space {
+  border-radius: 5px 0 0 5px;
+}
+
+.btn-yellow {
+  background-color: #73bced;
+  border-color: #161a17;
+  color: #333;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #6bb4df;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Votre fichier de styles CSS */
+
+.btn-warning.btn-yellow {
+  background-color: #07192d; /* Nouvelle couleur bleue du bouton */
+  color: #fff; /* Couleur du texte en blanc */
+}
+
+.btn-warning.btn-yellow.clicked {
+  background-color: #000; /* Couleur du fond en noir lorsque le bouton est cliqué */
+  color: #fff; /* Couleur du texte en blanc lorsque le bouton est cliqué */
+}
+
+/* Ajoutez d'autres styles au besoin */
